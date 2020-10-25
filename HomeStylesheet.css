@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/home-background/11.jpg); 
+    background-image: url(images/home-background/14.jpg); 
     background-repeat:no-repeat;
     background-size: auto 100%;
     background-size:cover;
@@ -10,6 +10,11 @@ body {
 .menu-header {
     display:flex;
     justify-content:center;
+	background-color:none;
+	width:100%;
+
+
+
 
 }
 .menu a{
@@ -17,9 +22,9 @@ body {
     padding: 10px;
     text-decoration:none;
     font-weight: bold;
-    font-size: large;
+    font-size: 50px;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Brush Script MT;
 
 }
 
