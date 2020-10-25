@@ -1,0 +1,17 @@
+.parallax {
+    background-image: url("../pex")
+}
+
+@font-face {
+    font-family: 'Cursivef';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Darleston.otf)
+}
+
+h1 {
+    font-family: Cursivef;
+    font-size: 600%;
+    padding: 2px;
+    text-align: center;
+}
