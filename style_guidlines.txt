@@ -1,0 +1,21 @@
+Overrall Feel 
+#############
+As a freemium service, we should aim for a more exclusive look. This means minimalist and elegant. 
+It must be gracefully put together without too many distracting features.
+
+#######
+Colours
+#######
+Due to the elitism present with Planitravel, here is the desired colour palette:
+#525B7A (Dark-blue-ish)
+#DEAA8C (Beige)
+#A85239 (Brown)
+#32292F(Black Coffee)
+#C6A15B (Gold-ish)
+#8E8DBE (Blue-ish)
+
+##########
+Typography
+##########
+Fonts are up to the liberty of each member due to the varying nature of , but the overall theme should be upheld: 
+Generally only elegant fonts will be chosen (tall, thin, serif-like fonts and/or cursive fonts)

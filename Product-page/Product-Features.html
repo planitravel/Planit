@@ -1,95 +1,157 @@
 <!DOCTYPE html>
-<html> 
-
-
+<html>
 
 <head>
     <title> Planit </title>
-    <link rel="stylesheet" href = "product-featurestyle.css">
+    <link rel="stylesheet" href="../product-featurestyle.css">
+    <script type="text/javascript" src="product-Features.js"></script>
+    <script>
 
-</head>
-<body>
+
+
+    </script>
     <style>
-        .logo{
+        .premium-btn {
+            right: 80px;
+            position: absolute;
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        .menu ul {
+            display: inline;
+        }
+        .banner h1{
+            text-align: left;
+            padding-left: 40%;
+
+        }
+
+        .menu li {
+            list-style: none;
+            margin: 0 20 px;
+            color: #b2b1b1;
+            cursor: pointer;
+        }
+
+        .logo {
             max-width: 20%;
             height: auto;
-            
+            float: left;
+
+        }
+
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1,
+        p,
+        h2,
+        ol {
+            color: white
+        }
+        .banner .subtitle{
+            color:white;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 25%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            top: 100%;
+
+    
+        }
+
+        p {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        menu ul {
+            display: inline-flex;
+            margin: 50px;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 20 px;
+            color: #b2b1b1;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .animation {
+            height: 50px;
+            overflow-y: scroll;
+
+
         }
     </style>
+
+</head>
+
+<body>
     <div class="container">
-        <div class="menu">
-           <ul>
-                <li class="logo"><img src="https://github.com/SEG2900-Group-21/Planit.github.io/blob/master/images/logo/logo1.PNG?raw=true"></li>
-                <li class="active"><Home></li>
-                <li>Home</li>
-                <li>Product</li>
-                <li>Contact</li>
-                <style>
-                    .premium-btn{
-                        right: 80px;
-                        position: absolute;
-                        text-decoration: none;
-                        color: #fff;
-                        border: 2px solid transparent;
-                        border-radius: 20px;
-                        background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left,#fd00da,#19d7f8);
-                        background-origin: border-box;
-                        background-clip: content-box, border-box;
 
-                    }
-                </style>
-                <li><a href="#" class="premium-btn"><span>Get premium</span></a></li>
-           </ul> 
-        </div>
+        <div class="logo"><img
+                src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true"></div>
         <div class="banner">
-            <div class="app-text">
-                <h1>Choose with ease: Travel, Save</h1>
-                <!--maybe add some <p> tag-->
 
-            </div>
+            <h1>Welcome to Planit!</h1>
+            <div class="subtitle">Planit is a web-site, suggesting the customer to travel in the best country </div>
+
+            <!--maybe add some <p> tag-->
 
 
         </div>
+        <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
+    </div>
+
+
+
+
 
     </div>
-    <style>
-    body{
-        background-color:black;
-        font-family:Arial, Helvetica, sans-serif
-    }
-    </style>
-<style>
-h1,p,h2,ol{
-    color:white  
-}
-h1{
-    text-align:center
-}
-p{
-    font-size: 25px;
-    text-align: center;
-}
-</style>
-    <h1>Welcome to Planit!</h1>
-<p>Planit ia a web-site, suggesting the customer to travel in the best country </p>
-<br>
-<br>
-<br>
-<h2> Why choosing us?</h2>
 
-<style>
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-</style>
-<img src="https://github.com/SEG2900-Group-21/Planit.github.io/blob/master/images/logo/logo1.PNG?raw=true" alt="Planit logo">
-    <li>Price: we suggest you to travel while having the possibility to make lots
-        of savings
-    </li>
-    <li>Choose with ease: Travel, save</li>
-    <li>Trust: We trust you</li>
-    <li>Reputation: Our excellent service created some good influence</li>
+
+    
+    <br>
+    <br>
+    <br>
+    <h2> Why choosing us?</h2>
+    <!--have to fix the scrolling part of, "Why choosing us?"-->
+
+    <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true" alt="Planit logo"
+        width="160" height="154">
+    <div class="animation">
+        <ul>
+            <li>Price: we suggest you to travel while having the possibility to make lots
+                of savings
+            </li>
+            <li>Choose with ease: Travel, save</li>
+            <li>Trust: We trust you</li>
+            <li>Reputation: Our excellent service created some good influence</li>
+        </ul>
+    </div>
+
+
 
 
 

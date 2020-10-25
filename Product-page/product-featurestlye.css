@@ -66,3 +66,9 @@ padding: 8px 22px;
     margin-left: 40 px;
 
 }
+.animation{
+    height:50px;
+    overflow-y: scroll;
+    
+
+}
