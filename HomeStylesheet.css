@@ -27,11 +27,49 @@ body {
     text-decoration:none;
     font-weight: bold;
     font-size: 50px;
-    color:white;
+	
+    color:#886A08;
+	transition:color .4s ease-out;
+	
     font-family: Brush Script MT;
+	/* the line that follows is to make links and underlines match properly*/
+	position: relative;
+
 
 }
+/* add this section of code to create nice animations on links */
 
+a::after {
+  
+  border-top: 0.1em dotted ;
+  content: "";
+  
+  /* the line that follows is to make links and underlines match properly*/
+  
+  position: absolute;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+	transition: right .4s cubic-bezier(0,.5,0,1);
+	
+}
+
+
+
+
+
+a:hover{
+	color: #C6A15B;
+	text-decoration:none;
+	
+}
+
+a:hover::after{
+	border-color: #C6A15B;
+	right:0;
+
+}
+/* add this section of code to create nice animation on links */
 
 /*main*/
 h1{
