@@ -1,7 +1,30 @@
-.parallax {
-    background-image: url("../pex")
+body, html {
+  height: 100%;
 }
 
+.parallax {
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Quote{
+    background-image: url("./photos/pexels-1.jpg");
+}
+
+#pricing{
+    background-image: url("./photos/san-francisco-2287016_1920.jpg")
+}
+.box{
+    border: 5px solid black;
+    max-width:1000px;
+    margin: auto;
+    background-color: rgba(243, 190, 93, 0.8);
+}
 @font-face {
     font-family: 'Cursivef';
     font-style: normal;
