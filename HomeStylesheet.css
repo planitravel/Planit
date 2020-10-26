@@ -43,7 +43,7 @@ body {
   
   .navbar ul li {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 1rem; 
   }
   
   .navbar ul li a {
@@ -148,10 +148,6 @@ button{
   background-color: #8E8DBE;
   border-left: none;
   cursor: pointer;
-}
-#navbar{
-  font-size: 100px;
-  font-family: Anton;
 }
 
 
