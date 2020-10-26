@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../product-featurestyle.css">
     <script type="text/javascript" src="product-Features.js"></script>
     <script>
+        
 
 
 
@@ -26,7 +27,8 @@
         .menu ul {
             display: inline;
         }
-        .banner h1{
+
+        .banner h1 {
             text-align: left;
             padding-left: 40%;
 
@@ -57,8 +59,9 @@
         ol {
             color: white
         }
-        .banner .subtitle{
-            color:white;
+
+        .banner .subtitle {
+            color: white;
             font-size: 25px;
             text-align: left;
             padding-left: 25%;
@@ -72,7 +75,7 @@
             text-align: center;
             top: 100%;
 
-    
+
         }
 
         p {
@@ -98,11 +101,46 @@
         }
 
         .animation {
-            height: 50px;
-            overflow-y: scroll;
+            height: 150px;
 
 
         }
+        *{
+            border:0;
+            padding:0;
+            margin:0;
+        }
+        .div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family:big john;
+            width: 100%;
+            height:100vh;
+        }
+        .h2{
+            font-size: 60px;
+            background:#eee;
+            padding: 8px 24px;
+            border-radius:16px;
+        }
+        div:nth-child(1){
+            background-image:url(img/savings.jpg);
+        }
+        div:nth-child(2){
+            background: lightblue;
+        }
+        div:nth-child(3){
+            height:400px;
+            background-image: url(img/travel.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        div:nth-child(4){
+            background: #fd00da;
+        }
+
     </style>
 
 </head>
@@ -117,8 +155,6 @@
             <h1>Welcome to Planit!</h1>
             <div class="subtitle">Planit is a web-site, suggesting the customer to travel in the best country </div>
 
-            <!--maybe add some <p> tag-->
-
 
         </div>
         <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
@@ -131,24 +167,29 @@
     </div>
 
 
-    
+
     <br>
     <br>
     <br>
     <h2> Why choosing us?</h2>
-    <!--have to fix the scrolling part of, "Why choosing us?"-->
 
     <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true" alt="Planit logo"
         width="160" height="154">
     <div class="animation">
-        <ul>
-            <li>Price: we suggest you to travel while having the possibility to make lots
-                of savings
-            </li>
-            <li>Choose with ease: Travel, save</li>
-            <li>Trust: We trust you</li>
-            <li>Reputation: Our excellent service created some good influence</li>
-        </ul>
+
+    </div>
+    <div id="parallax"></div>
+    <div>
+        <h2>lots of savings</h2><!--We suggest you to travel while having the possibility to make lots of saving-->
+    </div>
+    <div>
+        <h2>Travel + save</h2> <!--Chooses with ease, travel save-->
+    </div>
+    <div>
+        <h2>We trust you</h2> <!--We trust you-->
+    </div>
+    <div>
+        <h2>Reputation = good influence</h2> <!-- Our excellent service created some good influence-->
     </div>
 
 
