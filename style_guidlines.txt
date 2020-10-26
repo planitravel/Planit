@@ -19,3 +19,6 @@ Typography
 ##########
 Fonts are up to the liberty of each member due to the varying nature of , but the overall theme should be upheld: 
 Generally only elegant fonts will be chosen (tall, thin, serif-like fonts and/or cursive fonts)
+Example Fonts:
+-Athenia
+Pal
