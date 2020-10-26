@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="../product-featurestyle.css">
     <script type="text/javascript" src="product-Features.js"></script>
     <script>
-        
+        const prallax = document.getElementById
+            ("parallax");
+        window.addEventListener("scroll", function () {
+            let offset = window.pageYOffset;
+            console.log("offset: " + offset); {
+            }
 
 
 
@@ -67,6 +72,13 @@
             padding-left: 25%;
         }
 
+        .subtitle {
+            color: white;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 25%;
+        }
+
         h2 {
             text-align: center;
         }
@@ -74,6 +86,7 @@
         h1 {
             text-align: center;
             top: 100%;
+            font-size: 350%;
 
 
         }
@@ -101,99 +114,82 @@
         }
 
         .animation {
-            height: 150px;
+            height: 70px;
+            left: 300px;
+            position: absolute;
 
 
-        }
-        *{
-            border:0;
-            padding:0;
-            margin:0;
-        }
-        .div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-family:big john;
-            width: 100%;
-            height:100vh;
-        }
-        .h2{
-            font-size: 60px;
-            background:#eee;
-            padding: 8px 24px;
-            border-radius:16px;
-        }
-        div:nth-child(1){
-            background-image:url(img/savings.jpg);
-        }
-        div:nth-child(2){
-            background: lightblue;
-        }
-        div:nth-child(3){
-            height:400px;
-            background-image: url(img/travel.jpg);
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        div:nth-child(4){
-            background: #fd00da;
-        }
 
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="logo"><img
-                src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true"></div>
-        <div class="banner">
+    <nav>
+        <table style="width:100%;">
 
-            <h1>Welcome to Planit!</h1>
-            <div class="subtitle">Planit is a web-site, suggesting the customer to travel in the best country </div>
+            <tr>
+                <td style="width:20%">
+                    <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true"
+                        alt="Planit logo" width="320" height="308"> 
+
+                </td>
+                <td style="width:60%">
+                    <h1>Welcome to Planit!<h1>
+
+                </td>
+
+                <td style="width:20%">
+                    <a href="#" class="premium-btn">Get premium</a>
+                    </div>
+                    <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+
+    </nav>
 
 
+    <p>
+
+    <div>
+        <h2 style="font-size:180;"> Planit is a web-site, suggesting the customer to travel in the best country</h2>
+        <!--have to fix the scrolling part of, "Why choosing us?"-->
+        <div>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <h2 style="font-size:160%;"> Why choosing us?</h2>
         </div>
-        <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
-    </div>
+
+        <br>
+        <br>
+
+        <div>
 
 
+            <div class="animation" style="text-align:center;">
+                <ul>
+                    <li style="font-size:200%;"><b><u>Price:</u></b> we suggest you to travel while having the
+                        possibility to make lots
+                        of savings
+                    </li><br>
+                    <li style="font-size:200%;"><b><u>Choose with ease:</u></b> Travel, save </li><br>
+                    <li style="font-size:200%;"><b><u>Trust: </u></b> We trust you</li><br>
+                    <li style="font-size:200%;"><b><u> Reputation: </u></b> Our excellent service created some good
+                        influence</li>
+                </ul>
+            </div>
 
 
-
-    </div>
-
-
-
-    <br>
-    <br>
-    <br>
-    <h2> Why choosing us?</h2>
-
-    <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true" alt="Planit logo"
-        width="160" height="154">
-    <div class="animation">
-
-    </div>
-    <div id="parallax"></div>
-    <div>
-        <h2>lots of savings</h2><!--We suggest you to travel while having the possibility to make lots of saving-->
-    </div>
-    <div>
-        <h2>Travel + save</h2> <!--Chooses with ease, travel save-->
-    </div>
-    <div>
-        <h2>We trust you</h2> <!--We trust you-->
-    </div>
-    <div>
-        <h2>Reputation = good influence</h2> <!-- Our excellent service created some good influence-->
-    </div>
-
-
-
+            </p>
 
 
 </body>
