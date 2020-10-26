@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="../product-featurestyle.css">
     <script type="text/javascript" src="product-Features.js"></script>
     <script>
+        const prallax = document.getElementById
+            ("parallax");
+        window.addEventListener("scroll", function () {
+            let offset = window.pageYOffset;
+            console.log("offset: " + offset); {
+            }
 
 
 
@@ -26,7 +32,8 @@
         .menu ul {
             display: inline;
         }
-        .banner h1{
+
+        .banner h1 {
             text-align: left;
             padding-left: 40%;
 
@@ -57,8 +64,16 @@
         ol {
             color: white
         }
-        .banner .subtitle{
-            color:white;
+
+        .banner .subtitle {
+            color: white;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 25%;
+        }
+
+        .subtitle {
+            color: white;
             font-size: 25px;
             text-align: left;
             padding-left: 25%;
@@ -71,8 +86,9 @@
         h1 {
             text-align: center;
             top: 100%;
+            font-size: 350%;
 
-    
+
         }
 
         p {
@@ -98,8 +114,10 @@
         }
 
         .animation {
-            height: 50px;
-            overflow-y: scroll;
+            height: 70px;
+            left: 300px;
+            position: absolute;
+
 
 
         }
@@ -108,51 +126,70 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="logo"><img
-                src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true"></div>
-        <div class="banner">
+    <nav>
+        <table style="width:100%;">
 
-            <h1>Welcome to Planit!</h1>
-            <div class="subtitle">Planit is a web-site, suggesting the customer to travel in the best country </div>
+            <tr>
+                <td style="width:20%">
+                    <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true"
+                        alt="Planit logo" width="320" height="308"> 
 
-            <!--maybe add some <p> tag-->
+                </td>
+                <td style="width:60%">
+                    <h1>Welcome to Planit!<h1>
+
+                </td>
+
+                <td style="width:20%">
+                    <a href="#" class="premium-btn">Get premium</a>
+                    </div>
+                    <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+
+    </nav>
 
 
+    <p>
+
+    <div>
+        <h2 style="font-size:180;"> Planit is a web-site, suggesting the customer to travel in the best country</h2>
+        <!--have to fix the scrolling part of, "Why choosing us?"-->
+        <div>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <h2 style="font-size:160%;"> Why choosing us?</h2>
         </div>
-        <a href="../pricing-page/pricing.html" class="premium-btn"><span>Get premium</span></a>
-    </div>
+
+        <br>
+        <br>
+
+        <div>
 
 
+            <div class="animation" style="text-align:center;">
+                <ul>
+                    <li style="font-size:200%;"><b><u>Price:</u></b> we suggest you to travel while having the
+                        possibility to make lots
+                        of savings
+                    </li><br>
+                    <li style="font-size:200%;"><b><u>Choose with ease:</u></b> Travel, save </li><br>
+                    <li style="font-size:200%;"><b><u>Trust: </u></b> We trust you</li><br>
+                    <li style="font-size:200%;"><b><u> Reputation: </u></b> Our excellent service created some good
+                        influence</li>
+                </ul>
+            </div>
 
 
-
-    </div>
-
-
-    
-    <br>
-    <br>
-    <br>
-    <h2> Why choosing us?</h2>
-    <!--have to fix the scrolling part of, "Why choosing us?"-->
-
-    <img src="https://github.com/planitravel/planitravel/blob/main/images/logo/logo1.PNG?raw=true" alt="Planit logo"
-        width="160" height="154">
-    <div class="animation">
-        <ul>
-            <li>Price: we suggest you to travel while having the possibility to make lots
-                of savings
-            </li>
-            <li>Choose with ease: Travel, save</li>
-            <li>Trust: We trust you</li>
-            <li>Reputation: Our excellent service created some good influence</li>
-        </ul>
-    </div>
-
-
-
+            </p>
 
 
 </body>

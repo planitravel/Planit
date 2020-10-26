@@ -3,7 +3,7 @@
     padding: 0;
   }
   
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: #333;
     color: #fff;
@@ -11,8 +11,7 @@
     line-height: 1.6;
     overflow: hidden;
   }
-  
-  .container {
+.container {
     width: 100%;
     height: 100%;
     /* CSS Smooth Scroll */
@@ -32,7 +31,7 @@
     display: flex;
     width: 100%;
     height: 100px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(50, 53, 56, 0.7);
   }
   
   .navbar ul {
@@ -44,7 +43,7 @@
   
   .navbar ul li {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 1rem; 
   }
   
   .navbar ul li a {
@@ -57,7 +56,7 @@
     color: skyblue;
   }
   
-  section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,24 +69,89 @@
     scroll-snap-align: center;
   }
   
-  section h1 {
+section h1 {
     font-size: 4rem;
   }
+
+
+/*section part*/
 section#home {
     background:url(images/home-background/4.jpg);
     background-repeat:no-repeat;
     background-size: auto 100%;
     background-size:cover;
   }
-  
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/*other pages css*/
 section#about {
-    background-color:white;
+    background-color:AliceBlue;
   }
   
 section#service {
-    background-color:white;
+    background-color:CornflowerBlue;
   }
 section#contact {
-    background: white;
+    background: FloralWhite;
   }
+
+input {
+  display: inline-block;
+  font-size: 40px;
+  font-family: Anton;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  padding-left: 20px;
+  border-right: none;
+}
+button{
+  display: inline-block;
+  font-size: 40px;
+  width: 160px;
+  font-family: Anton; 
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #8E8DBE;
+  border-left: none;
+  cursor: pointer;
+}
+#searchbar{
+  font-family: Anton;
+  font-size: 100px;
+}
+
   
