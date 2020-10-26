@@ -149,6 +149,9 @@ button{
   border-left: none;
   cursor: pointer;
 }
-
+#searchbar{
+  font-family: Anton;
+  font-size: 100px;
+}
 
   
