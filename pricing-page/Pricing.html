@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <script>
+        const checkpoint = 100;
+            window.addEventListener("scroll", () => {
+                const mouse = window.pageYOffset;
+                if (mouse <= checkpoint) {
+                    opacity = 1 - 1.3 ** mouse / checkpoint
+                }
+                else {
+                    opacity = 0
+                }
+                document.querySelector(".front").getElementsByClassName.opacity = opacity;
+            });
+    </script>
     <div id="Quote" class="parallax">
         <br>
         <h1 class="box" style="font-size: 80px; letter-spacing: 1.5px; word-spacing: 3px;">Make the Most of Your Travel Experience</h1>
@@ -16,7 +29,7 @@
     </div>
     <div id="pricing" class="parallax">
 
-        <div class="columns zoom" style="padding-left: 2.6%;">
+        <div class="front columns zoom" style="padding-left: 2.6%;">
             <ul.a class="features" id="tourist">
                 <li class="header seamless-bottom" id="tourist">TOURIST</li>
                 <li class="center seamless-top"><i>For an upgraded experience</i></li>
@@ -41,7 +54,7 @@
                 <li>Discounts provided from hotels</li>
                 <li>Provides information on tourist events such as tour buses and festivals</li>
                 <li>Crash-course on local culture, traditions, and language</li>
-                <li style="font-size:35px; list-style-type: none; font-weight: 900;text-align: center; color: rgb(110, 8, 8);">Our Hottest Deal!</li>
+                <li style="font-size:35px; list-style-type: none; font-weight: 500;text-align: center; color: rgb(110, 8, 8); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Our Hottest Deal!</li>
                 <li class="outline center"><a href="#" class="button">Choose this plan</a></li>
             </ul.a>
         </div>
@@ -52,11 +65,11 @@
                 <li class="header seamless-bottom" id="local">LOCAL</li>
                 <li class="seamless-top center"><i>For people tired of the tourist traps</i></li>
                 <li class="price seamless-bottom">$12/week</li>
-                <li class="center included">All features included in <b>"Tourist"</b> and <b>"Explorer"</b> plans</li>
-                <li>Maps of nearby crime</li>
+                <li class="center included">All features included in <b>"Tourist"</b> and <b>"Explorer"</b> plans and:</li>
+                <li>Automatic Travel itineraries and automated booking</li>
                 <li>Emergency location tracking</li>
                 <li>Discounts to thousands of eateries and hotels</li>
-                <li>Automatic Travel itineraries and automated booking</li>
+                <li>Maps of nearby crime</li>
                 <li class="outline center"><a href="#" class="button">Choose this plan</a></li>
             </ul.a>
         </div>
