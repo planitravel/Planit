@@ -132,7 +132,7 @@ section#contact {
 input {
   display: inline-block;
   font-size: 40px;
-  font-family: Anton;
+  font-family: Arial, Helvetica, sans-serif;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   padding-left: 20px;
@@ -142,7 +142,7 @@ button{
   display: inline-block;
   font-size: 40px;
   width: 160px;
-  font-family: Anton; 
+  font-family: Arial, Helvetica, sans-serif;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #8E8DBE;
@@ -150,8 +150,8 @@ button{
   cursor: pointer;
 }
 #searchbar{
-  font-family: Anton;
-  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
 }
 
   
