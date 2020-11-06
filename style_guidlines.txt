@@ -18,7 +18,11 @@ Due to the elitism present with Planitravel, here is the desired colour palette:
 Typography
 ##########
 Fonts are up to the liberty of each member due to the varying nature of , but the overall theme should be upheld: 
-Generally only elegant fonts will be chosen (tall, thin, serif-like fonts and/or cursive fonts)
+Generally elegant and clear fonts will be chosen 
+-Athenia
+-Palatino
+-Fantasy
+-Impact
 
 font-family: 
 

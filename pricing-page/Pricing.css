@@ -33,7 +33,7 @@ body, html {
     border: 5px solid black;
     max-width:1050px;
     margin: auto;
-    background-color: rgba(243, 190, 93, 0.8);
+    background-color: rgba(243, 190, 93, 0.93);
 }
 @font-face {
     font-family: 'Cursivef';
@@ -123,6 +123,10 @@ br {
     list-style-type: none;
 }
 
+.apparate div {
+    transition: opacity 0.2s;
+}
+
 .button{
     background-color: #ffc861;
     color: #32292F;
@@ -157,12 +161,18 @@ br {
 }
 
 .zoom{
-    transition: 0.4s;
+    transition: 0.4s !important;
 }
 
 .zoom:hover{
     transform: scale(1.2)
 }
 
+.centerimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 ul, li { padding:0; margin: 0 }
