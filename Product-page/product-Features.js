@@ -3,5 +3,5 @@ const prallax = document.getElementById
 window.addEventListener("scroll",function()
 {
     let offset = window.pageYOffset;
-    console.log("offset: " + offset);{
-}
+    console.log("offset: " + offset);
+});
