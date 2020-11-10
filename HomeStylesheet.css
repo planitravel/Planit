@@ -43,7 +43,7 @@ body {
   
   .navbar ul li {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 1rem; 
   }
   
   .navbar ul li a {
@@ -128,4 +128,30 @@ section#service {
 section#contact {
     background: FloralWhite;
   }
+
+input {
+  display: inline-block;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  padding-left: 20px;
+  border-right: none;
+}
+button{
+  display: inline-block;
+  font-size: 40px;
+  width: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #8E8DBE;
+  border-left: none;
+  cursor: pointer;
+}
+#searchbar{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+}
+
   
