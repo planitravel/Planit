@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
   }
-  
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  serif;
     background: #333;
     color: #fff;
     height: 100vh;
@@ -31,28 +30,23 @@ body {
     display: flex;
     width: 100%;
     height: 100px;
-    background: rgba(50, 53, 56, 0.7);
   }
-  
-  .navbar ul {
+ .navbar ul {
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: center;
   }
-  
-  .navbar ul li {
+ .navbar ul li {
     margin: 0 1rem;
     padding: 1rem; 
   }
-  
-  .navbar ul li a {
+.navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #f4f4f4;
   }
-  
-  .navbar ul li a:hover {
+.navbar ul li a:hover {
     color: skyblue;
   }
   
@@ -64,8 +58,7 @@ section {
     text-align: center;
     width: 100%;
     height: 100vh;
-   
-    /* Scroll Snap */
+ /* Scroll Snap */
     scroll-snap-align: center;
   }
   
@@ -75,83 +68,127 @@ section h1 {
 
 
 /*section part*/
-section#home {
-    background:url(images/home-background/4.jpg);
+section#Home {
+    background:url(images/home-background/background.jpg);
     background-repeat:no-repeat;
-    background-size: auto 100%;
-    background-size:cover;
+    background-size: cover;
+
   }
-.arrow{
+  .arrow {
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%)
 }
 .arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }
 
-/*other pages css*/
+/*about*/
 section#about {
     background-color:AliceBlue;
   }
-  
-section#service {
-    background-color:CornflowerBlue;
-  }
+/*contact*/
 section#contact {
     background: FloralWhite;
   }
 
-input {
-  display: inline-block;
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  padding-left: 20px;
-  border-right: none;
+/*search bar*/
+h1.search-bar{
+  font-family: "Courier New", Courier, monospace;
 }
-button{
-  display: inline-block;
-  font-size: 40px;
-  width: 160px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  background-color: #8E8DBE;
-  border-left: none;
+.search-bar{
+  box-sizing: border-box;
+}
+/* Style the search field */
+form.example input[type=text] {
+  padding: 20px;
+  font-size: 17px;
+  border: 1px solid rgb(175, 173, 173);
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  background:rgb(59, 83, 104);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
-#searchbar{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 80px;
+form.example button:hover {
+  background: #88aece;
+}
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
+
+/*horizontal scrolling*/
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+/*service*/ 
+section#service {
+  background-color:CornflowerBlue;
+  background:url(images/featureBackground/feature.jpg);
+  background-repeat:no-repeat;
+  background-size: 50%;
+
+}
+
+.feature button{
+    background-color: rgb(83, 114, 150);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+  }
   
+
+
+
+
