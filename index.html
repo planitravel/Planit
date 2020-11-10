@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
 <head>
     <title> Home page </title>
@@ -64,6 +65,17 @@
 
 
 =======
+=======
+<head>
+<title> Home page </title>
+<link rel="stylesheet"  href="HomeStylesheet.css">
+<script src="home.js"></script>
+</head>
+<body> 
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+>>>>>>> a86da621244c970389f2f3f87cd5edeab86a8d35
             <li><a href="#Home">Home</a></li>
             <li><a href="#service">Service</a></li>
             <img src="images/logo/logo1.PNG" alt="planit logo" width="120" height="100">
@@ -71,6 +83,7 @@
             <li><a href="#contact">Contact</a></li>
     </nav>
 
+<<<<<<< HEAD
 <section id="home">
   <h1>PLANIT FOR YOUR PLANET</h1>
   <p class="lead">Welcome To Planit </p>
@@ -96,10 +109,217 @@
     <h1>Service</h1>
 
     <p class="lead"> </p>
+=======
+<section id="Home">
+  <h1>PLANIT FOR YOUR PLANET</h1>
+  <p class="lead">Welcome To Planit </p>
+  <style>
+.container-home {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vh;
+  
+}
+.chevron {
+  position: absolute;
+  width: 3.5rem;
+  height: 0.60rem;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 5s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #4f6479;
+}
+
+.chevron:before {
+  left: 0;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+            transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+            transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+            transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+  </style>
+ <div class="container-home">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+</section>
+
+<section id="search-bar">
+    <h1 class="searchbar"> Discovery your planet!</h1> 
+    <style>
+        h1.searchbar{
+            font-size: 60px;
+            font-family:Gill Sans, sans-serif;
+        }
+    </style>
+
+    <div class="search">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- The form -->
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="button"><i class="fa fa-search"></i></button>
+      </form>
+        <div class="scrollmenu">
+            <a href="#"><img src="images/continents/beijing.jpg" alt="planit logo" width="150" height="200"> <br>Asian</a>
+            <a href="#"><img src="images/continents/America.jpg" alt="planit logo" width="150" height="200"><br>North America</a>
+            <a href="#"><img src="images/continents/southamerica.jpg" alt="planit logo" width="150" height="200"><br>South America</a>
+            <a href="#"><img src="images/continents/Africa.jpg" alt="planit logo" width="150" height="200"><br>Africa</a>
+            <a href="#"><img src="images/continents/australia.jpg" alt="planit logo" width="150" height="200"><br>Australia</a>
+            <a href="#"><img src="images/continents/europe.jpg" alt="planit logo" width="150" height="200"><br>Europe</a>
+            <a href="#t"></a>
+          </div>
+        </div>
+</section>
+
+<section id="service">
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+section#service {
+background-color:CornflowerBlue;
+background:url(images/featureBackground/feature.jpg);
+background-repeat:no-repeat;
+background-size: 50%;
+
+}
+.row {
+display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.feature {
+flex: 50%;
+padding: 230px;
+text-align: center;
+
+}
+.feature p{
+display: block;
+}
+.feature h2{
+font-size: 70px;
+}
+.feature h1 {
+bottom: 8px;
+left: 16px;
+font-size: 50px;
+}
+
+.feature button{
+background-color: #5e7fe9; /* Green */
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 8px;
+}
+  
+
+
+
+  </style>
+  <div class="row">
+    <div class="feature" >
+      <br><br><br><br>
+      <h1>Why choosing us?</h1>
+          <a href="#pricing"><button type="button">Try now!</button></a>
+    </div>
+    <div class="feature">
+        <h2>Customized</h2>
+        <p>Plan your tour before you go & share your journal to more people</p><br>
+        <h2>Systematized</h2>
+        <p>travel as local, giving details about culture insight</p><br>
+        <h2>Saving Time & Money</h2>
+        <p>choosing optimal resturant, hotel, site for your own needs</p><br>
+>>>>>>> a86da621244c970389f2f3f87cd5edeab86a8d35
 </section>
 
 
 <section id="pricing">
+<<<<<<< HEAD
     <h1>Pricing</h1>
     <p class="lead"></p>
 </section>
@@ -118,3 +338,449 @@
 </body>
 
 </html>
+=======
+  <style>
+
+
+  .parallax {
+    height: 70%;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#Quote{
+  height:900px;
+  background-image: url("./photos/pexels-1.jpg");
+}
+
+#pricing{
+  background-image: url("./photos/Pricing-Background.png")
+}
+
+
+.box{
+  max-width:1050px;
+  margin: auto;
+  background-color: rgba(243, 190, 93, 0.93);
+}
+@font-face {
+  font-family: 'Cursivef';
+  font-style: normal;
+  src: url(./fonts/Darleston.otf)
+}
+
+h1 {
+  font-family: Cursivef;
+  font-size: 600%;
+  padding-top: 10px;
+  text-align: center;
+}
+br {
+  display: block;
+  margin-bottom: 2px;
+  font-size:2px;
+  line-height: 100px;
+}
+
+.center{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.wrap{
+  text-overflow: ellipsis;
+}
+
+.columns {
+float: left;
+width: 29%;
+padding: 15px;
+}
+
+.features{
+  list-style-type: '\2713';
+  margin: 0;
+}
+
+#explorer{
+  background-color: #f8eede;
+  color: black;
+}
+
+#tourist{
+  background-color: #525B7A;
+  color: blanchedalmond;
+}
+
+#local{
+  background-color:#C6A15B;
+  color: black;
+}
+
+.features li{
+  border-bottom: 3px solid #635d5d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-align: left;
+  background-color: inherit;
+}
+
+.features .price{
+  background-color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style-type: none;
+  font-weight: 1000;
+  color:white;
+  background-color:#32292F;
+  font-size: 60px;
+  text-align: center;
+}
+
+.header{
+  list-style-type: none;
+  font-family: fantasy;
+  text-align: center !important; 
+  font-size: 50px !important;
+}
+
+.features .outline{
+  background-color: gray;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.apparate div {
+  transition: opacity 0.2s;
+}
+
+.button{
+  background-color: #ffc861;
+  color: #32292F;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 0 1pt 2pt black;
+}
+
+.included{
+  list-style: none; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seamless-bottom{
+  border-bottom: none !important;
+}
+
+.seamless-top{
+  border-top:none;
+  list-style: none;
+}
+
+.columns:hover{
+  box-shadow: 1px 4px 3px 0 rgba(0,0,0,0.2)
+}
+
+.zoom{
+  transition: 0.4s !important;
+}
+
+.zoom:hover{
+  transform: scale(1.1)
+}
+
+.centerimg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+ul, li { padding:0; margin: 0 }
+  </style>
+
+  <div id="pricing" class="parallax">
+
+    <div class="front columns zoom" style="padding-left: 2.6%;">
+        <ul.a class="features" id="tourist">
+            <li class="header seamless-bottom" id="tourist">TOURIST</li>
+            <li class="center seamless-top"><i>For an upgraded experience</i></li>
+            <li class="price seamless-bottom">$0/week</li>
+            <li class="center included">Basic features:</li>
+            <li> Automatic GPS routing to desired location</li>
+            <li> Recommends tourist attractions</li>
+            <li> Shows nearby popular hotels and restaurants</li>
+            <li> Access to user-provided reviews on tourist locations</li>
+            <li class="outline center"><a href="#" class="button">Sign Up Today</a></li>
+        </ul.a>
+    </div>
+
+    <div class="columns zoom">
+        <ul.a class="features wrap" id="explorer">
+            <li class="header seamless-bottom" id="explorer">EXPLORER</li>
+            <li class="center seamless-top"><i>For true adventure-seekers</i></li>
+            <li class="price seamless-bottom">$4/week</li>
+            <li class="center included">All features in <b>"Tourist"</b> plan and:</li>
+            <li>Hidden gem restaurants, certified by natives and by tracking local social media trends</li>
+            <li>Secret nature attractions such as hot springs and hidden beaches</li>
+            <li>Discounts provided from hotels</li>
+            <li>Provides information on tourist events such as tour buses and festivals</li>
+            <li>Crash-course on local culture, traditions, and language</li>
+            <li
+                style="font-size:35px; list-style-type: none; font-weight: 500;text-align: center; color: rgb(110, 8, 8); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                Our Hottest Deal!</li>
+            <li class="outline center"><a href="#" class="button">Choose this plan</a></li>
+        </ul.a>
+    </div>
+
+
+    <div class="columns zoom" style="padding-right: 0%;">
+        <ul.a class="features" id="local">
+            <li class="header seamless-bottom" id="local">LOCAL</li>
+            <li class="seamless-top center"><i>For people tired of the tourist traps</i></li>
+            <li class="price seamless-bottom">$12/week</li>
+            <li class="center included">All features included in <b>"Tourist"</b> and <b>"Explorer"</b> plans and:
+            </li>
+            <li>Automatic Travel itineraries and automated discounted booking</li>
+            <li>Emergency location tracking</li>
+            <li>Discounts to thousands of eateries and hotels</li>
+            <li>Maps of nearby crime</li>
+            <li class="outline center"><a href="#" class="button">Choose this plan</a></li>
+        </ul.a>
+    </div>
+
+</div>
+</section>
+
+<section>
+
+  <br>
+</section>
+
+<section id="contact">
+
+  <style>
+.column-contact {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #cfd7e9;
+  color: white;
+}
+
+.container-contact {
+  padding: 0 16px;
+}
+
+.container-contact::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+p.connection{
+  text-decoration: none;
+}
+.fa{
+  text-decoration: none;
+}
+}
+  </style>
+  <h1 style="text-align:center">Meet Our Team</h1>
+  <div class="row">
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/Kyle.JPG" alt="Kyle" width="110" height="130" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Kyle</h2>
+          <p class="title">Financial director & Founder</p>
+          <p>jane@example.com</p>
+          <p id=connection>
+          <a href=""><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+         <a href src=""><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+         <a href src=""><i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/yosri.jpg" alt="Yosri" width="130" height="140" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Yosri</h2>
+          <p class="title">Founder</p>
+          <p>mike@example.com</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/Joy.JPG" alt="Joy" width="130" height="140" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Joy Ye</h2>
+          <p class="title">Designer& Founder</p>
+          <p>zye072@uottawa.ca</p>
+          <a href="https://www.linkedin.com/in/joyyezi/"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+          <a href src="https://www.instagram.com/_zijunye_/"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+          <a href src="https://github.com/ZijunYe"><i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/person-icon.png" alt="Taha"  width="130" height="140" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Taha</h2>
+          <p class="title">Founder</p>
+          <p>john@example.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/Kevin.jpg" alt="Kevin" width="110" height="140" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Kevin</h2>
+          <p class="title">Founder</p>
+          <p>john@example.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="column-contact">
+      <div class="card">
+        <img src="images/Portrait/person-icon.png" alt="Joshua"  width="130" height="140" style="border-radius: 50%">
+        <div class="container-contact">
+          <h2>Joshua</h2>
+          <p class="title">Founder</p>
+          <p>john@example.com</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>   
+ 
+</section>
+
+<section>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #26336b;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #778daf;
+}
+
+/* Style the container/contact section */
+.container1 {
+  border-radius: 5px;
+  margin-top: 150px;
+
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+  </style>
+  <div class="container1">
+
+    <div style="text-align:center">
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2>Contact Us</h2>
+        <img src="images/home-background/contact.jpg" style="width:70%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+>>>>>>> a86da621244c970389f2f3f87cd5edeab86a8d35

@@ -72,85 +72,49 @@ section#Home {
     background:url(images/home-background/background.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-
-  }
-  .arrow {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%,-50%)
-}
-.arrow span{
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-bottom: 5px solid white;
-  border-right: 5px solid white;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
-}
-@keyframes animate {
-  0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
-  }
-}
-
-/*about*/
-section#about {
-    background-color:AliceBlue;
-  }
-/*contact*/
-section#contact {
-    background: FloralWhite;
   }
 
 /*search bar*/
 h1.search-bar{
   font-family: "Courier New", Courier, monospace;
 }
-.search-bar{
+* {
   box-sizing: border-box;
 }
+
 /* Style the search field */
 form.example input[type=text] {
-  padding: 20px;
+  padding: 10px;
   font-size: 17px;
-  border: 1px solid rgb(175, 173, 173);
+  border: 1px solid grey;
   float: left;
-  width: 70%;
+  width: 80%;
   background: #f1f1f1;
 }
+
 /* Style the submit button */
 form.example button {
   float: left;
   width: 20%;
-  padding: 20px;
-  background:rgb(59, 83, 104);
+  padding: 10px;
+  background: #3071a7;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
+
 form.example button:hover {
-  background: #88aece;
+  background: #75a1c5;
 }
+
 /* Clear floats */
 form.example::after {
   content: "";
   clear: both;
   display: table;
 }
-
 
 /*horizontal scrolling*/
 
@@ -169,26 +133,3 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
   background-color: #777;
 }
-
-/*service*/ 
-section#service {
-  background-color:CornflowerBlue;
-  background:url(images/featureBackground/feature.jpg);
-  background-repeat:no-repeat;
-  background-size: 50%;
-
-}
-
-.feature button{
-    background-color: rgb(83, 114, 150);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-
-
-
-
